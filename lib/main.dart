@@ -72,9 +72,11 @@ class _DarkLightThemeState extends State<DarkLightTheme> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return MaterialApp(
+              debugShowCheckedModeBanner: false,
               home: Scaffold(
+                backgroundColor: Colors.white,
                 body: Center(
-                  child: CircularProgressIndicator(),
+                  child: Text('Loading...'),
                 ),
               ),
             );

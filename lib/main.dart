@@ -32,11 +32,11 @@ ThemeData _lightTheme = ThemeData(
 );
 
 ThemeData _darkTheme = ThemeData(
-  accentColor: Colors.amber[800],
+  accentColor: Colors.tealAccent,
   brightness: Brightness.dark,
-  primaryColor: Colors.amber,
+  primaryColor: Colors.tealAccent,
   buttonTheme: ButtonThemeData(
-    buttonColor: Colors.amber,
+    buttonColor: Colors.tealAccent,
     textTheme: ButtonTextTheme.primary,
   ),
 );
@@ -94,9 +94,12 @@ class _DarkLightThemeState extends State<DarkLightTheme> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    TextField(
-                      decoration: InputDecoration(
-                        labelText: "Enter Name",
+                    Container(
+                      width: 250,
+                      child: TextField(
+                        decoration: InputDecoration(
+                          labelText: "Enter Name",
+                        ),
                       ),
                     ),
                     RaisedButton(
